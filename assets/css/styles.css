@@ -106,6 +106,7 @@ img {
 
 .l-header {
   width: 100%;
+  height: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -235,6 +236,7 @@ img {
 }
 
 /* ===== ABOUT =====*/
+
 .about__container {
   row-gap: 2rem;
   text-align: center;
