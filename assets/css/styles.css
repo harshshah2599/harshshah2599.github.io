@@ -316,6 +316,30 @@ img {
   height: 100%;
 }
 
+
+/*===== GITHUB =====*/
+
+.pinned-repos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
@@ -369,6 +393,11 @@ img {
 .gallery__img img:hover {
   transform: scale(1.5);
 }
+
+
+
+
+
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -463,6 +492,11 @@ img {
   .contact__container {
     justify-items: center;
   }
+  .projects__container{
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
 }
 @media screen and (min-width: 768px) {
   body {
@@ -532,3 +566,56 @@ img {
     width: 450px;
   }
 }
+
+
+
+/* PROJECTS */
+
+.projects__container {
+  gap: 2rem;
+  /* padding: 10rem; */
+  padding-left: 13rem;
+  padding-right: 13rem;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+}
+
+
+.projects__card{
+border: 1px solid #e0e0e0;
+border-radius: 0.5rem;
+padding: 1rem;
+transition: transform 0.3s ease-in-out;
+background-color: #fff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: var(--mb-2);
+}
+
+.projects__card:hover {
+  transform: scale(1.05);
+}
+
+.projects__img {
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15); /* Consistent shadow */
+}
+
+.projects_card_header {
+  font-size: var(--h3-font-size); /* Use existing font size variable */
+  color:black; /* Use existing color variable */
+  margin-bottom: var(--mb-2); /* Consistent margin */
+}
+
+.projects_card_text {
+  font-size: var(--normal-font-size); /* Use existing font size variable */
+  color: var(--second-color); /* Use existing color variable */
+  margin-bottom: var(--mb-2); /* Consistent margin */
+}
+
+
+
+
