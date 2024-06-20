@@ -606,8 +606,14 @@ margin-bottom: var(--mb-2);
 
 .projects_card_header {
   font-size: var(--h3-font-size); /* Use existing font size variable */
-  color:black; /* Use existing color variable */
+  color: var(--first-color); /* Use existing color variable */
   margin-bottom: var(--mb-2); /* Consistent margin */
+}
+
+.projects_card_skills_header{
+  font-size: var(--h4-font-size); /* Use existing font size variable */
+  color:black; /* Use existing color variable */
+  margin-bottom: var(--mb-2);
 }
 
 .projects_card_text {
