@@ -399,6 +399,92 @@ img {
 
 
 
+
+/*===== AWARDS SECTION =====*/
+.awards__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.awards__content {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.awards__content:hover {
+  transform: translateY(-10px);
+}
+
+.awards__title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+.awards__subtitle {
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  margin-bottom: 1rem;
+}
+
+.awards__description {
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  margin-bottom: 1rem;
+}
+
+.awards__date {
+  font-size: var(--smaller-font-size);
+  color: var(--second-color);
+}
+
+/*===== RESEARCH SECTION =====*/
+.research__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.research__content {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.research__content:hover {
+  transform: translateY(-10px);
+}
+
+.research__title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+.research__subtitle {
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  margin-bottom: 1rem;
+}
+
+.research__description {
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  margin-bottom: 1rem;
+}
+
+.research__date {
+  font-size: var(--smaller-font-size);
+  color: var(--second-color);
+}
+
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -626,3 +712,20 @@ margin-bottom: var(--mb-2);
 
 
 
+.home__typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 3s steps(14, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 13ch; } /* Adjust width according to the length of your text */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
